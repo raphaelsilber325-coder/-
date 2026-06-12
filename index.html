@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="עו&quot;ד שולמית אנסבכר — מומחית בנדל&quot;ן, מקרקעין ומיסוי. ירושלים. 054-661-5300">
+<title>עו"ד שולמית אנסבכר | נדל"ן, מקרקעין ומיסוי — ירושלים</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --gold:#B89A5A;--gold-light:#D4B97A;--gold-dark:#8A7040;
+    --navy:#0F1C2E;--navy2:#162338;--navy3:#1E2F47;
+    --cream:#F5F0E8;--text-on-dark:#E8E0D0;--text-muted:#A09880;
+  }
+  html{scroll-behavior:smooth}
+  body{direction:rtl;font-family:'Assistant',sans-serif;background:var(--navy);color:var(--text-on-dark);overflow-x:hidden}
+
+  nav{position:fixed;top:0;right:0;left:0;z-index:100;background:rgba(15,28,46,0.97);border-bottom:1px solid rgba(184,154,90,0.25);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;backdrop-filter:blur(6px)}
+  .nav-logo{font-family:'Frank Ruhl Libre',serif;font-size:15px;font-weight:500;color:var(--gold-light);letter-spacing:0.03em;white-space:nowrap}
+  .nav-links{display:flex;gap:2rem;list-style:none}
+  .nav-links a{text-decoration:none;color:var(--text-muted);font-size:14px;font-weight:400;letter-spacing:0.02em;transition:color 0.2s;cursor:pointer}
+  .nav-links a:hover{color:var(--gold-light)}
+  .nav-cta{border:1px solid var(--gold);color:var(--gold-light);padding:8px 20px;border-radius:2px;font-size:13px;cursor:pointer;background:transparent;font-family:'Assistant',sans-serif;transition:background 0.2s,color 0.2s;text-decoration:none}
+  .nav-cta:hover{background:var(--gold);color:var(--navy)}
+
+  #hero{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden}
+  .hero-bg-lines{position:absolute;inset:0;pointer-events:none;opacity:0.06;background-image:repeating-linear-gradient(90deg,var(--gold) 0px,var(--gold) 1px,transparent 1px,transparent 80px)}
+  .hero-inner{max-width:1100px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+  .hero-eyebrow{font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1.25rem}
+  .hero-title{font-family:'Frank Ruhl Libre',serif;font-size:clamp(36px,5vw,58px);font-weight:700;line-height:1.15;color:#fff;margin-bottom:0.75rem}
+  .hero-subtitle{font-size:18px;color:var(--gold-light);font-weight:400;margin-bottom:1.75rem;font-family:'Frank Ruhl Libre',serif;letter-spacing:0.02em}
+  .hero-desc{font-size:15px;line-height:1.8;color:var(--text-muted);margin-bottom:2.5rem;max-width:460px}
+  .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+  .btn-primary{background:var(--gold);color:var(--navy);padding:13px 28px;border-radius:2px;font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:'Assistant',sans-serif;letter-spacing:0.04em;transition:background 0.2s;text-decoration:none;display:inline-block}
+  .btn-primary:hover{background:var(--gold-light)}
+  .btn-secondary{border:1px solid rgba(184,154,90,0.5);color:var(--gold-light);padding:13px 28px;border-radius:2px;font-size:14px;cursor:pointer;background:transparent;font-family:'Assistant',sans-serif;transition:border-color 0.2s,color 0.2s;text-decoration:none;display:inline-block}
+  .btn-secondary:hover{border-color:var(--gold-light);color:#fff}
+
+  .hero-card{background:var(--navy2);border:1px solid rgba(184,154,90,0.2);border-radius:4px;padding:2.5rem;position:relative}
+  .hero-card::before{content:'';position:absolute;top:0;right:0;width:100px;height:3px;background:var(--gold)}
+  .credential-item{display:flex;align-items:flex-start;gap:14px;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .credential-item:last-child{border-bottom:none}
+  .cred-icon{width:38px;height:38px;border-radius:2px;background:rgba(184,154,90,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px;color:var(--gold)}
+  .cred-title{font-size:14px;font-weight:600;color:#fff;margin-bottom:3px}
+  .cred-sub{font-size:13px;color:var(--text-muted);line-height:1.5}
+
+  section{padding:90px 0}
+  .section-inner{max-width:1100px;margin:0 auto;padding:0 2.5rem}
+  .section-label{font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.75rem}
+  .section-title{font-family:'Frank Ruhl Libre',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:#fff;margin-bottom:1rem;line-height:1.2}
+  .section-desc{font-size:15px;color:var(--text-muted);line-height:1.8;max-width:600px}
+  .gold-line{width:48px;height:2px;background:var(--gold);margin:1.25rem 0 2.5rem}
+
+
+  .about-photo-wrap{position:relative;align-self:stretch;min-height:380px}
+  .about-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:3px;display:block;filter:grayscale(8%) contrast(1.03)}
+  .about-photo-wrap::before{content:'';position:absolute;top:-8px;right:-8px;width:60px;height:60px;border-top:2px solid var(--gold);border-right:2px solid var(--gold);border-radius:0;z-index:1;pointer-events:none}
+  .about-photo-wrap::after{content:'';position:absolute;bottom:-8px;left:-8px;width:60px;height:60px;border-bottom:2px solid var(--gold);border-left:2px solid var(--gold);border-radius:0;z-index:1;pointer-events:none}
+  #about{background:var(--navy2)}
+  .about-grid{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:3.5rem;align-items:start}
+  .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(184,154,90,0.15);margin-top:2.5rem;border:1px solid rgba(184,154,90,0.15)}
+  .stat-box{padding:1.25rem 1.5rem;background:var(--navy2)}
+  .stat-num{font-family:'Frank Ruhl Libre',serif;font-size:32px;font-weight:700;color:var(--gold-light)}
+  .stat-label{font-size:12px;color:var(--text-muted);margin-top:3px}
+  .about-text p{font-size:15px;line-height:1.9;color:#B0A898;margin-bottom:1.25rem}
+  .about-text p:last-child{margin-bottom:0}
+  .about-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:2rem}
+  .badge{border:1px solid rgba(184,154,90,0.3);color:var(--gold-light);font-size:12px;padding:5px 14px;border-radius:2px;letter-spacing:0.04em}
+
+  #services{background:var(--navy)}
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1rem}
+  .service-card{background:var(--navy2);border:1px solid rgba(255,255,255,0.06);border-radius:3px;padding:2rem 1.75rem;transition:border-color 0.25s,transform 0.2s;position:relative;overflow:hidden;cursor:default}
+  .service-card::after{content:'';position:absolute;bottom:0;right:0;left:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform 0.3s}
+  .service-card:hover{border-color:rgba(184,154,90,0.35);transform:translateY(-3px)}
+  .service-card:hover::after{transform:scaleX(1)}
+  .service-icon{font-size:28px;color:var(--gold);margin-bottom:1rem}
+  .service-title{font-size:16px;font-weight:600;color:#fff;margin-bottom:0.6rem;line-height:1.4}
+  .service-text{font-size:13px;color:var(--text-muted);line-height:1.75}
+
+  #audience{background:var(--navy2)}
+  .audience-list{margin-top:1rem}
+  .audience-item{display:flex;align-items:flex-start;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .audience-item:last-child{border-bottom:none}
+  .aud-num{font-family:'Frank Ruhl Libre',serif;font-size:13px;color:var(--gold);font-weight:500;letter-spacing:0.1em;min-width:28px;padding-top:2px}
+  .aud-content h4{font-size:16px;font-weight:600;color:#fff;margin-bottom:5px}
+  .aud-content p{font-size:14px;color:var(--text-muted);line-height:1.75}
+
+  #contact{background:var(--navy)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+  .contact-info{margin-top:2rem}
+  .contact-item{display:flex;align-items:center;gap:14px;padding:1.1rem 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .contact-item:last-child{border-bottom:none}
+  .contact-icon{width:40px;height:40px;background:rgba(184,154,90,0.1);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:18px;flex-shrink:0}
+  .contact-label{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:3px}
+  .contact-value{font-size:14px;color:#fff;font-weight:500}
+  .contact-value a{color:#fff;text-decoration:none}
+  .contact-value a:hover{color:var(--gold-light)}
+
+  .contact-form{background:var(--navy2);border:1px solid rgba(184,154,90,0.15);border-radius:4px;padding:2.25rem;position:relative}
+  .contact-form::before{content:'';position:absolute;top:0;right:0;width:60px;height:2px;background:var(--gold)}
+  .form-group{margin-bottom:1.25rem}
+  .form-group label{display:block;font-size:12px;color:var(--text-muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px}
+  .form-group input,.form-group textarea,.form-group select{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(184,154,90,0.2);border-radius:2px;color:#fff;font-family:'Assistant',sans-serif;font-size:14px;padding:11px 14px;outline:none;transition:border-color 0.2s;direction:rtl}
+  .form-group select option{background:#162338;color:#fff}
+  .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--gold)}
+  .form-group textarea{height:110px;resize:none}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .form-submit{width:100%;background:var(--gold);color:var(--navy);border:none;padding:13px;border-radius:2px;cursor:pointer;font-size:14px;font-weight:700;font-family:'Assistant',sans-serif;letter-spacing:0.05em;transition:background 0.2s;margin-top:0.5rem;display:flex;align-items:center;justify-content:center;gap:8px}
+  .form-submit:hover{background:var(--gold-light)}
+  .form-success{display:none;background:rgba(184,154,90,0.1);border:1px solid rgba(184,154,90,0.3);border-radius:3px;padding:1rem 1.25rem;margin-top:1rem;font-size:14px;color:var(--gold-light);text-align:center}
+
+  footer{background:#070E17;border-top:1px solid rgba(184,154,90,0.15);padding:2.5rem 0}
+  .footer-inner{max-width:1100px;margin:0 auto;padding:0 2.5rem;display:flex;justify-content:space-between;align-items:center}
+  .footer-logo{font-family:'Frank Ruhl Libre',serif;font-size:14px;color:var(--gold)}
+  .footer-copy{font-size:12px;color:var(--text-muted)}
+  .footer-links{display:flex;gap:1.5rem}
+  .footer-links a{font-size:13px;color:var(--text-muted);text-decoration:none;cursor:pointer}
+  .footer-links a:hover{color:var(--gold-light)}
+
+  /* WhatsApp float — SVG icon, no font dependency */
+  .wa-float{
+    position:fixed;bottom:2rem;left:2rem;z-index:200;
+    width:56px;height:56px;border-radius:50%;
+    background:#25D366;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 24px rgba(0,0,0,0.45);
+    cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;
+    text-decoration:none;
+  }
+  .wa-float:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(37,211,102,0.4)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+
+  .gold-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(184,154,90,0.4),transparent);margin:0}
+
+  @media(max-width:768px){
+    .hero-inner,.contact-grid{grid-template-columns:1fr;gap:2.5rem}
+    .about-grid{grid-template-columns:1fr;gap:2rem}
+    .about-photo-wrap{min-height:280px;max-height:320px}
+    .services-grid{grid-template-columns:1fr}
+    .nav-links{display:none}
+    .footer-inner{flex-direction:column;gap:1rem;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">עו"ד שולמית אנסבכר</div>
+  <ul class="nav-links">
+    <li><a onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">אודות</a></li>
+    <li><a onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">שירותים</a></li>
+    <li><a onclick="document.getElementById('audience').scrollIntoView({behavior:'smooth'})">למי מיועד</a></li>
+    <li><a onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">צור קשר</a></li>
+  </ul>
+  <a href="tel:+972546615300" class="nav-cta">054-661-5300</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg-lines"></div>
+  <div class="hero-inner">
+    <div>
+      <p class="hero-eyebrow">משרד עורכי דין בירושלים</p>
+      <h1 class="hero-title">עו"ד שולמית אנסבכר</h1>
+      <p class="hero-subtitle">מומחית בנדל"ן, מקרקעין ומיסוי</p>
+      <p class="hero-desc">ייצוג אישי ומקצועי בעסקאות נדל"ן, התחדשות עירונית, מיסוי מקרקעין וייפוי כוח מתמשך — עם ניסיון מעשי של מעל 20 שנה בענף.</p>
+      <div class="hero-btns">
+        <a onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn-primary" style="cursor:pointer">לשיחת ייעוץ חינם</a>
+        <a onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" class="btn-secondary">השירותים שלנו</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="credential-item">
+        <div class="cred-icon"><i class="ti ti-school"></i></div>
+        <div>
+          <div class="cred-title">תואר ראשון במשפטים — LL.B</div>
+          <div class="cred-sub">תואר שני במינהל עסקים — MBA</div>
+        </div>
+      </div>
+      <div class="credential-item">
+        <div class="cred-icon"><i class="ti ti-building"></i></div>
+        <div>
+          <div class="cred-title">ניסיון מ-2003</div>
+          <div class="cred-sub">קבוצת חברות נדל"ן, ייזמות ופרויקטים מורכבים</div>
+        </div>
+      </div>
+      <div class="credential-item">
+        <div class="cred-icon"><i class="ti ti-gavel"></i></div>
+        <div>
+          <div class="cred-title">סגן יו"ר ועדת מקרקעין</div>
+          <div class="cred-sub">לשכת עורכי הדין ירושלים</div>
+        </div>
+      </div>
+      <div class="credential-item">
+        <div class="cred-icon"><i class="ti ti-map-pin"></i></div>
+        <div>
+          <div class="cred-title">הר החוצבים, ירושלים</div>
+          <div class="cred-sub">רחוב הרטום 12, בית רמפ"א</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-photo-wrap">
+        <img src="photo.jpg" alt="עו&quot;ד שולמית אנסבכר" loading="lazy">
+      </div>
+      <div>
+        <p class="section-label">אודות המשרד</p>
+        <h2 class="section-title">ניסיון, מקצועיות<br>ושירות אישי</h2>
+        <div class="gold-line"></div>
+        <div class="about-text">
+          <p>עו"ד שולמית אנסבכר בעלת תואר ראשון במשפטים (LL.B) ותואר שני במינהל עסקים (MBA), עם ניסיון מקצועי רחב הנצבר משנת 2003.</p>
+          <p>במסגרת עבודתה הנרחבת בקבוצת חברות נדל"ן, שולמית ניהלה פרויקטים מורכבים של תמ"א 38 ופינוי-בינוי, ניהלה מו"מ מול גורמים ממשלתיים ופרטיים, והופיעה בפני מס הכנסה, מע"מ, מיסוי מקרקעין, עיריות ולשכת רישום מקרקעין.</p>
+          <p>כיום משמשת סגן יו"ר ועדת המקרקעין של לשכת עורכי הדין בירושלים — ביטוי לאמון המקצועי שזכתה לו בענף.</p>
+        </div>
+        <div class="about-badges">
+          <span class="badge">נדל"ן ומקרקעין</span>
+          <span class="badge">מיסוי מקרקעין</span>
+          <span class="badge">התחדשות עירונית</span>
+          <span class="badge">ייפוי כוח מתמשך</span>
+          <span class="badge">דמי מפתח</span>
+        </div>
+      </div>
+      <div>
+        <div class="about-stats">
+          <div class="stat-box">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">שנות ניסיון בנדל"ן</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">LL.B</div>
+            <div class="stat-label">תואר במשפטים</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">MBA</div>
+            <div class="stat-label">תואר במינהל עסקים</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">ירושלים</div>
+            <div class="stat-label">מרכז פעילות</div>
+          </div>
+        </div>
+        <div style="margin-top:2rem;background:rgba(184,154,90,0.07);border:1px solid rgba(184,154,90,0.2);border-radius:3px;padding:1.5rem">
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.8;font-style:italic">"ניהול מקצועי של עסקת נדל"ן אינו רק ידע משפטי — הוא שילוב של הבנה עסקית, יחסי אנוש ומחויבות מלאה ללקוח."</p>
+          <p style="font-size:12px;color:var(--gold);margin-top:1rem;letter-spacing:0.08em">— עו"ד שולמית אנסבכר</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<section id="services">
+  <div class="section-inner">
+    <p class="section-label">תחומי התמחות</p>
+    <h2 class="section-title">השירותים שאנו מציעים</h2>
+    <div class="gold-line"></div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-home"></i></div>
+        <div class="service-title">עסקאות מכר נדל"ן</div>
+        <div class="service-text">ייצוג רוכשים ומוכרים בעסקאות מכר — דירות יד שנייה, דירות מקבלן, נכסים מסחריים ועוד. ליווי מלא מהחוזה ועד הרישום.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-building-skyscraper"></i></div>
+        <div class="service-title">התחדשות עירונית</div>
+        <div class="service-text">ייצוג בפרויקטי תמ"א 38, פינוי-בינוי, הפשרת קרקעות ועסקאות קומבינציה. ניסיון נרחב מצד יזמים ודיירים כאחד.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-calculator"></i></div>
+        <div class="service-title">מיסוי מקרקעין</div>
+        <div class="service-text">ייעוץ ותכנון מיסוי בעסקאות נדל"ן — מס שבח, מס רכישה, היטל השבחה, ופטורים. מול רשות המיסים ורשם המקרקעין.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-file-certificate"></i></div>
+        <div class="service-title">ייפוי כוח מתמשך</div>
+        <div class="service-text">עריכה, רישום והפקדת ייפוי כוח מתמשך אצל האפוטרופוס הכללי. שירות אישי הכולל הגעה עד לבית הלקוח.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-key"></i></div>
+        <div class="service-title">דמי מפתח</div>
+        <div class="service-text">טיפול בהסכמי שכירות מוגנת, פינוי דיירים מוגנים וכל ההיבטים המשפטיים הנוגעים לדמי מפתח בירושלים ובמרכז.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-certificate"></i></div>
+        <div class="service-title">רישום זכויות ומשכנתאות</div>
+        <div class="service-text">רישום והעברת זכויות בטאבו, רשות מקרקעי ישראל וחברות משכנות. רישום משכנתאות, שעבודים והערות אזהרה.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<section id="audience">
+  <div class="section-inner">
+    <p class="section-label">למי מיועד השירות</p>
+    <h2 class="section-title">מי פונה אלינו?</h2>
+    <div class="gold-line"></div>
+    <div class="audience-list">
+      <div class="audience-item">
+        <div class="aud-num">01</div>
+        <div class="aud-content">
+          <h4>אנשים פרטיים — קנייה ומכירה</h4>
+          <p>פרטיים המעוניינים לקנות או למכור נכס מקרקעין מכל סוג — דירה, מגרש, נכס מסחרי — עם ליווי אישי ומלא לאורך כל התהליך.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="aud-num">02</div>
+        <div class="aud-content">
+          <h4>בעלי נכסים הזקוקים לרישום ועדכון זכויות</h4>
+          <p>רישום וביצוע תיקוני משכנתאות, העברת זכויות, הסרת עיקולים והערות אזהרה מול לשכת רישום המקרקעין וגורמים ממשלתיים.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="aud-num">03</div>
+        <div class="aud-content">
+          <h4>משפחות המעוניינות בייפוי כוח מתמשך</h4>
+          <p>הסדרת ייפוי כוח מתמשך לבן/בת זוג, הורה או אדם קרוב אחר. שירות אישי ומכבד עד בית הלקוח.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="aud-num">04</div>
+        <div class="aud-content">
+          <h4>חברות מימון ואשראי חוץ-בנקאי</h4>
+          <p>ייצוג גופי מימון בהיבטי בטוחות — בדיקת כדאיות נכסים, רישום שעבודים, התנהלות מול לשכות הרישום ורשם המשכונות.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="aud-num">05</div>
+        <div class="aud-content">
+          <h4>יזמים וחברות קבלניות</h4>
+          <p>ייצוג בפרויקטי התחדשות עירונית, הסכמי מכר קבלן, פירוק שיתוף ועסקאות קומבינציה — מתחילת הפרויקט ועד רישום הזכויות הסופי.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label">צרו קשר</p>
+    <h2 class="section-title">נשמח לשמוע מכם</h2>
+    <div class="gold-line"></div>
+    <div class="contact-grid">
+      <div>
+        <p class="section-desc">אנחנו כאן לכל שאלה, בקשה לייעוץ ראשוני, או כל עניין משפטי. צרו איתנו קשר ונחזור אליכם בהקדם.</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ti ti-phone"></i></div>
+            <div>
+              <div class="contact-label">טלפון</div>
+              <div class="contact-value"><a href="tel:+972546615300">054-661-5300</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ti ti-mail"></i></div>
+            <div>
+              <div class="contact-label">דוא"ל</div>
+              <div class="contact-value"><a href="mailto:officeshulamit@gmail.com">officeshulamit@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ti ti-map-pin"></i></div>
+            <div>
+              <div class="contact-label">כתובת</div>
+              <div class="contact-value">רחוב הרטום 12, בית רמפ"א<br>הר החוצבים, ירושלים</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:var(--gold)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L0 24l6.335-1.512A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 01-5.007-1.373l-.36-.214-3.762.898.945-3.653-.234-.374A9.78 9.78 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">וואטסאפ</div>
+              <div class="contact-value"><a href="https://wa.me/972546615300" target="_blank">שלחו הודעה עכשיו</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>שם מלא</label>
+            <input type="text" id="f-name" placeholder="ישראל ישראלי">
+          </div>
+          <div class="form-group">
+            <label>טלפון</label>
+            <input type="tel" id="f-phone" placeholder="05X-XXX-XXXX">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>דוא"ל</label>
+          <input type="email" id="f-email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label>נושא הפנייה</label>
+          <select id="f-topic">
+            <option value="">בחרו נושא...</option>
+            <option>עסקת מכר נדל"ן</option>
+            <option>התחדשות עירונית</option>
+            <option>מיסוי מקרקעין</option>
+            <option>ייפוי כוח מתמשך</option>
+            <option>דמי מפתח</option>
+            <option>רישום זכויות</option>
+            <option>אחר</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>הודעה</label>
+          <textarea id="f-msg" placeholder="תארו בקצרה את הנושא שברצונכם להתייעץ עליו..."></textarea>
+        </div>
+        <button class="form-submit" onclick="sendEmail()">
+          <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:var(--navy)" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          פתח מייל ושלח לשולמית
+        </button>
+        <div class="form-success" id="form-success">
+          ✓ אפליקציית המייל נפתחה עם הפרטים — לחץ "שלח" כדי לסיים!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">עו"ד שולמית אנסבכר</div>
+    <div class="footer-links">
+      <a onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">אודות</a>
+      <a onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">שירותים</a>
+      <a onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">צור קשר</a>
+    </div>
+    <div class="footer-copy">© 2026 עו"ד שולמית אנסבכר | כל הזכויות שמורות</div>
+  </div>
+</footer>
+
+<!-- WhatsApp float with proper SVG icon -->
+<a href="https://wa.me/972546615300" class="wa-float" target="_blank" aria-label="שלחו הודעה בוואטסאפ">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L0 24l6.335-1.512A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 01-5.007-1.373l-.36-.214-3.762.898.945-3.653-.234-.374A9.78 9.78 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+  </svg>
+</a>
+
+<script>
+function sendEmail() {
+  var name    = document.getElementById('f-name').value.trim();
+  var phone   = document.getElementById('f-phone').value.trim();
+  var email   = document.getElementById('f-email').value.trim();
+  var topic   = document.getElementById('f-topic').value;
+  var msg     = document.getElementById('f-msg').value.trim();
+
+  if (!name || !phone) {
+    alert('נא למלא לפחות שם וטלפון');
+    return;
+  }
+
+  var subject = encodeURIComponent('פנייה חדשה מהאתר — ' + (topic || 'פנייה כללית'));
+  var body = encodeURIComponent(
+    'שלום שולמית,\n\n' +
+    'קיבלת פנייה חדשה מהאתר:\n\n' +
+    'שם: ' + (name  || '—') + '\n' +
+    'טלפון: ' + (phone || '—') + '\n' +
+    'דוא"ל: ' + (email || '—') + '\n' +
+    'נושא: ' + (topic || '—') + '\n\n' +
+    'הודעה:\n' + (msg || '—') + '\n\n' +
+    '---\n' +
+    'נשלח מאתר עו"ד שולמית אנסבכר'
+  );
+
+  var a = document.createElement('a');
+  a.href = 'mailto:officeshulamit@gmail.com?subject=' + subject + '&body=' + body;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+
+  var success = document.getElementById('form-success');
+  success.style.display = 'block';
+  setTimeout(function(){ success.style.display = 'none'; }, 6000);
+}
+</script>
+</body>
+</html>
