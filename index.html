@@ -482,9 +482,10 @@ function sendEmail() {
 
   var a = document.createElement('a');
   a.href = 'mailto:officeshulamit@gmail.com?subject=' + subject + '&body=' + body;
+  a.style.display = 'none';
   document.body.appendChild(a);
   a.click();
-  document.body.removeChild(a);
+  setTimeout(function(){ document.body.removeChild(a); }, 100);
 
   var success = document.getElementById('form-success');
   success.style.display = 'block';
