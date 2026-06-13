@@ -218,15 +218,18 @@
         <h2 class="section-title">ניסיון, מקצועיות<br>ושירות אישי</h2>
         <div class="gold-line"></div>
         <div class="about-text">
-          <p>עו"ד שולמית אנסבכר בעלת תואר ראשון במשפטים (LL.B) ותואר שני במינהל עסקים (MBA), עם ניסיון מקצועי רחב הנצבר משנת 2003.</p>
-          <p>במסגרת עבודתה הנרחבת בקבוצת חברות נדל"ן, שולמית ניהלה פרויקטים מורכבים של תמ"א 38 ופינוי-בינוי, ניהלה מו"מ מול גורמים ממשלתיים ופרטיים, והופיעה בפני מס הכנסה, מע"מ, מיסוי מקרקעין, עיריות ולשכת רישום מקרקעין.</p>
-          <p>כיום משמשת סגן יו"ר ועדת המקרקעין של לשכת עורכי הדין בירושלים — ביטוי לאמון המקצועי שזכתה לו בענף.</p>
+          <p>עו"ד שולמית אנסבכר בעלת תואר ראשון במשפטים (L.L.B), תואר שני במינהל עסקים (M.B.A) ותואר שני במינהל ומדיניות ציבורית (M.P.A.).</p>
+          <p>משנת 2003 עבדה בקבוצת חברות נדל"ן העוסקות ברכישה וניהול נכסי נדל"ן מסחריים ופרטיים ברחבי הארץ והעולם, ייזמות וניהול פרויקטים של תמ"א 38 ופינוי-בינוי. במסגרת עבודתה הייתה יזמית ושותפה בניהול פרויקטים גדולים, ניהול מו"מ, ניהול צוות עובדים והופעה בפני משרדי הממשל השונים לרבות מס הכנסה, מע"מ, מיסוי מקרקעין, עיריות, לשכת רישום המקרקעין ופקיד ההסדר.</p>
+          <p>עו"ד אנסבכר מתמחה בתחום המקרקעין על כל היבטיו — מביאה ניסיון עשיר בייזמות ומקרקעין, ובקיאות בדיני חוזים עם דגש על המשפט האזרחי-מסחרי. כן מתמחה בדיני מיסוי, תכנוני מס, ייעוץ מס לעסקאות נדל"ן מורכבות וליווי בכל ההליכים הנדרשים.</p>
+          <p>מכירה היטב את מורכבות המקרקעין במזרח ירושלים — רישומי מקרקעין שאינם מוסדרים, תביעות בסכסוכים בין בעלי קרקעות, שחרור נכסי נפקדים, תביעות פינוי ודמי שימוש לרבות נכסים התפוסים ע"י פולשים שנים רבות.</p>
+          <p>כיום מלווה פרויקטים יזמיים גדולים ברעננה, רחובות וירושלים, ומשמשת סגן יו"ר ועדת המקרקעין של לשכת עורכי הדין בירושלים.</p>
         </div>
         <div class="about-badges">
           <span class="badge">נדל"ן ומקרקעין</span>
           <span class="badge">מיסוי מקרקעין</span>
           <span class="badge">התחדשות עירונית</span>
-          <span class="badge">ייפוי כוח מתמשך</span>
+          <span class="badge">מזרח ירושלים</span>
+          <span class="badge">תכנוני מס</span>
           <span class="badge">דמי מפתח</span>
         </div>
       </div>
@@ -234,19 +237,19 @@
         <div class="about-stats">
           <div class="stat-box">
             <div class="stat-num">20+</div>
-            <div class="stat-label">שנות ניסיון בנדל"ן</div>
+            <div class="stat-label">שנות ניסיון</div>
           </div>
           <div class="stat-box">
-            <div class="stat-num">LL.B</div>
+            <div class="stat-num">L.L.B</div>
             <div class="stat-label">תואר במשפטים</div>
           </div>
           <div class="stat-box">
-            <div class="stat-num">MBA</div>
-            <div class="stat-label">תואר במינהל עסקים</div>
+            <div class="stat-num">M.B.A</div>
+            <div class="stat-label">מינהל עסקים</div>
           </div>
           <div class="stat-box">
-            <div class="stat-num">ירושלים</div>
-            <div class="stat-label">מרכז פעילות</div>
+            <div class="stat-num">M.P.A</div>
+            <div class="stat-label">מינהל ומדיניות ציבורית</div>
           </div>
         </div>
         <div style="margin-top:2rem;background:rgba(184,154,90,0.07);border:1px solid rgba(184,154,90,0.2);border-radius:3px;padding:1.5rem">
@@ -489,7 +492,16 @@ function sendEmail() {
 
   var success = document.getElementById('form-success');
   success.style.display = 'block';
-  setTimeout(function(){ success.style.display = 'none'; }, 6000);
+
+  var opened = false;
+  window.addEventListener('blur', function(){ opened = true; }, { once: true });
+  setTimeout(function(){
+    if (!opened) {
+      success.innerHTML = '⚠️ לא נמצאה אפליקציית מייל. שלחו ישירות ל: <a href="mailto:officeshulamit@gmail.com" style="color:var(--gold-light);text-decoration:underline">officeshulamit@gmail.com</a>';
+    } else {
+      setTimeout(function(){ success.style.display = 'none'; }, 5000);
+    }
+  }, 1000);
 }
 </script>
 </body>
